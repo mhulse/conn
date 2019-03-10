@@ -1,0 +1,25 @@
+{
+  "name": "conn",
+  "version": "1.0.0",
+  "description": "Basic console override for Node.js.",
+  "author": "Michael Hulse",
+  "license": {
+    "//": "https://spdx.org/licenses/",
+    "type": "Apache-2.0",
+    "url": "http://www.apache.org/licenses/LICENSE-2.0"
+  },
+  "scripts": {
+    "test": "mocha ./test/test.js"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mhulse/conn.git"
+  },
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^5.15.1",
+    "mocha": "^6.0.0"
+  }
+}
