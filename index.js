@@ -3,6 +3,9 @@ const _console = console;
 // https://stackoverflow.com/a/48566862/922323
 module.exports = ((debug = false) => {
 
+  // https://stackoverflow.com/a/41882441/922323
+  require('util').inspect.defaultOptions.depth = null;
+
   const log = (name, args) => {
 
     if ( ! debug) return;
