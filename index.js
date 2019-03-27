@@ -1,10 +1,13 @@
+const util = require('util');
 const _console = console;
 
 // https://stackoverflow.com/a/48566862/922323
 module.exports = ((debug = false) => {
 
   // https://stackoverflow.com/a/41882441/922323
-  require('util').inspect.defaultOptions.depth = null;
+  util.inspect.defaultOptions.depth = null;
+  // https://stackoverflow.com/a/48231698/922323
+  util.inspect.defaultOptions.maxArrayLength = null;
 
   const log = (name, args) => {
 
